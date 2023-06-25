@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="src/CSS/styles.css" />
+    <title>Netflix - Assistir programas de TV online, assistir filmes online</title>
+    
+  </head>
+  <body>
+    <header>
+      <nav class="BarraNav"> 
+        <div class="BarraNavMarca"> 
+          <img
+            src="./src/img/netflixlogo.png"
+            alt="logo"
+            class="LogoMarca" /> 
+
+        </div>
+
+        <div class="BarraNavItens"> 
+          <div class="NavItem"> 
+            <div class="dropdown__container">
+              <i class="fas fa-globe"></i> 
+              
+              <select
+                name="Linguagem"
+                id="SelecaoLinguagem"
+                class="LinguagemSuspensa"> 
+
+                <option value="portugues" selected>Português</option>
+                <option value="Ingles">Inglês</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="NavItem"> 
+            <button class="BotaoEntrar">Entrar</button> 
+          </div>
+        </div>
+      </nav>
+    </header>
+          <!-- inicio -->
+    <main>
+      <section class="Netflix"> 
+        <div class="NetflixImagemContainer"> 
+          <img
+            src="./src/img/netflix.jpeg"
+            alt="Netflix imagem"
+            class="NetflixImagem"/> 
+        </div>
+        <div class="NetflixOverlay"></div> 
+
+        <div class="NetflixCard"> 
+          <h1 class="NetflixTitle"> 
+            Filmes ilimitados, TV,<br />
+            Mostre-me mais.
+          </h1>
+          <p class="NetflixSubtitle">Assista em qualquer lugar e cancele quando quiser.</p> 
+          <p class="NetflixDescription"> 
+            Pronto para assistir? Digite seu e-mail para criar ou reiniciar seu
+            Filiação .
+          </p>
+
+          <div class="EmailContainer">
+            <div class="FormContainer">
+              <input type="email" class="EmailInput" placeholder=" " />
+              <label class="EmailLabel">Endereço de email</label>
+            </div>
+            <button class="BotaoIniciar">  Iniciar <i class="fal fa-chevron-right"></i> </button>
+          </div>
+        </div>
+      </section>
+      <section class="FeatureContainer">
+        <!-- parte 1 -->
+        <div class="Feature">
+          <div class="FeatureDetails">
+            <h3 class="FeatureTitle">Divirta-se na sua TV.</h3>
+            <h5 class="FeatureSubtitle">
+              Assista em smart TVs, PlayStation, Xbox, Chromecast, Apple TV,
+              Leitores de Blu-ray e muito mais.
+            </h5>
+          </div>
+          <div class="FeatureImagemContainer">
+            <img
+              src="./src/img/img1.png"
+              alt="Feature image"
+              class="FeatureImagem"
+            />
+            <div class="FeatureVideoContainer">
+              <video
+                autoplay=""
+                loop=""
+                muted=""
+                class="FeatureVideo"
+              >
+                <source
+                  src="./src/img/netflixV2.mp4"
+                  type="video/mp4"/>
+              </video>
+            </div>
+          </div>
+        </div>
+        <!-- parte 2 -->
+        <div class="Feature">
+          <div class="FeatureDetails">
+            <h3 class="FeatureTitle">
+              Baixe seus programas para assistir offline.
+            </h3>
+            <h5 class="FeatureSubtitle">
+              Salve seus favoritos facilmente e tenha sempre algo para assistir.
+            </h5>
+          </div>
+          <div class="FeatureImagemContainer">
+            <img
+              src="./src/img/img2.jpg"
+              alt="Feature image"
+              class="FeatureImagem"
+            />
+            <div class="Feature2Container">
+              <div class="PosterContainer">
+                <img
+                  src="./src/img/img4.png"
+                  alt="poster"
+                  class="Poster"
+                />
+              </div>
+              <div class="PosterDetails">
+                <h4>Stranger Things</h4>
+                <h6>Download..</h6>
+              </div>
+              <div class="DownloadGif">
+                <img
+                  src="./src/img/gif2.gif"
+                  alt="downloading gif"
+                  class="Gif"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- parte 3 -->
+        <div class="Feature">
+          <div class="FeatureDetails">
+            <h3 class="FeatureTitle">Assista em todos os lugares.</h3>
+            <h5 class="FeatureSubtitle">
+              Transmita filmes e programas de TV ilimitados em seu telefone, tablet,
+              notebook e televisão.
+            </h5>
+          </div>
+          <div class="FeatureImagemContainer Feature3ImagemContainer">
+            <img
+              src="./src/img/img3.png"
+              alt="Feature image"
+              class="FeatureImagem Feature3Imagem"
+            />
+            <div
+              class="
+              FeatureVideoContainer
+              Feature3VideoContainer
+              "
+            >
+              <video
+                autoplay=""
+                loop=""
+                muted=""
+                class="FeatureVideo Feature3Video"
+              >
+                <source
+                  src="./src/img/netflixV1.mp4"
+                  type="video/mp4"
+                />
+              </video>
+            </div>
+          </div>
+        </div>
+        <!-- Feature 4 -->
+        <div class="Feature">
+          <div class="FeatureDetails">
+            <h3 class="FeatureTitle">Crie perfis para crianças.</h3>
+            <h5 class="FeatureSubtitle">
+              Envie as crianças em aventuras com seus personagens favoritos em um
+              espaço feito apenas para eles - grátis com sua assinatura.
+            </h5>
+          </div>
+          <div class="FeatureImagemContainer">
+            <img
+              src="./src/img/img5.png"
+              alt="Feature image"
+              class="FeatureImagem"
+            />
+          </div>
+        </div>
+      </section>
+      <section class="FAQlistcontainer">
+        <h1 class="FAQheading">perguntas frequentes</h1>
+        <div class="FAQlist">
+          <div class="FAQaccordian">
+            <button class="FAQtitle">
+              o que é netflix?<i class="fal fa-plus"></i>
+            </button>
+            <div class="FAQvisible">
+              <p>
+                Netflix é um serviço de streaming que oferece uma ampla variedade de
+                premiados programas de TV, filmes, anime,         documentários e muito mais –
+                em milhares de dispositivos conectados à Internet.
+              </p>
+              <p>
+                Você pode assistir o quanto quiser, quando quiser, sem
+                anúncio único – tudo por um preço mensal baixo. sempre há
+                algo novo para descobrir, e novos programas de TV e filmes são adicionados
+                toda semana!
+              </p>
+            </div>
+          </div>
+          <div class="FAQaccordian">
+            <button class="FAQtitle">
+              Quanto custa netflix?<i class="fal fa-plus"></i>
+            </button>
+            <div class="FAQvisible">
+              <p>
+                
+                Assista à Netflix em seu smartphone, tablet, Smart TV, laptop ou
+                dispositivo de streaming, tudo por uma taxa mensal fixa. Gama de planos
+                de R$25,90 á R$ 55,90 por mês. Sem custos extras, sem contratos.
+              </p>
+            </div>
+          </div>
+          <div class="FAQaccordian">
+            <button class="FAQtitle">
+              Onde posso assistir?<i class="fal fa-plus"></i>
+            </button>
+            <div class="FAQvisible">
+              <p>
+                Assista em qualquer lugar, a qualquer hora, em um número ilimitado de dispositivos. Sinal
+                com sua conta Netflix para assistir instantaneamente na web em
+                netflix.com do seu computador pessoal ou em qualquer
+                dispositivo conectado à Internet que oferece o aplicativo Netflix, incluindo
+                smart TVs, smartphones, tablets, reprodutores de mídia streaming e
+                consoles de jogos.
+              </p>
+              <p>
+                Você também pode baixar seus programas favoritos com o iOS,
+                Aplicativo Android ou Windows 10. Use downloads para assistir enquanto você está
+                em movimento e sem uma conexão com a internet. Leve Netflix com
+                você em qualquer lugar.
+              </p>
+            </div>
+          </div>
+          <div class="FAQaccordian">
+            <button class="FAQtitle">
+              Como faço para cancelar?<i class="fal fa-plus"></i>
+            </button>
+            <div class="FAQvisible">
+              <p>
+                Netflix é flexível. Não há contratos irritantes nem compromissos. Você pode facilmente cancelar sua conta online em dois cliques. Não há taxas de cancelamento – inicie ou interrompa sua conta a qualquer momento.
+              </p>
+            </div>
+          </div>
+          <div class="FAQaccordian">
+            <button class="FAQtitle">
+              O que posso assistir da Netflix?<i class="fal fa-plus"></i>
+            </button>
+            <div class="FAQvisible">
+              <p>
+                A Netflix tem uma extensa biblioteca de longas-metragens, documentários, programas de TV, anime, originais premiados da Netflix e muito mais. Assista o quanto quiser, quando quiser.
+              </p>
+            </div>
+          </div>
+          <div class="FAQaccordian">
+            <button class="FAQtitle">
+              Netflix é bom para crianças?<i class="fal fa-plus"></i>
+            </button>
+            <div class="FAQvisible">
+              <p>A experiência Netflix Kids está incluída na sua assinatura para dar aos pais o controle enquanto as crianças curtem programas de TV e filmes para toda a família em seu próprio espaço.</p>
+              <p>Os perfis infantis vêm com controles dos pais protegidos por PIN que permitem restringir a classificação etária do conteúdo que as crianças podem assistir e bloquear títulos específicos que você não deseja que as crianças vejam.</p>
+            </div>
+          </div>
+        </div>
+        <div class="FAQ__get__started__email">
+          <h3>
+            Pronto para assistir? Digite seu e-mail para criar ou reiniciar seu
+            Filiação.
+          </h3>
+          <div class="EmailContainer">
+            <div class="FormContainer">
+              <input type="Email" class="EmailInput" placeholder=" " />
+              <label class="EmailLabel">Endereço de email.</label>
+            </div>
+            <button class="BotaoIniciar">
+              Iniciar <i class="fal fa-chevron-right"></i>
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer__row__1">
+        <h4>Duvidas? Ligue: 0800 887 0201</h4>
+      </div>
+      <div class="footer__row__2">
+        <div class="column1">
+          <p>FAQ</p>
+          <p>Relações com Investidores</p>
+          <p>Privacidade</p>
+          <p>Teste rápido</p>
+        </div>
+        <div class="column2">
+          <p>Central de Ajuda</p>
+          <p>Empregos</p>
+          <p>Preferências de Cookies</p>
+          <p>Noticias legais</p>
+        </div>
+        <div class="column3">
+          <p>Conta</p>
+          <p>Formas de Assistir</p>
+          <p>Informação corporativa</p>
+          <p>Só na Netflix</p>
+        </div>
+        <div class="column4">
+          <p>centro de mídia</p>
+          <p>Termos de uso</p>
+          <p>Contate-nos</p>
+        </div>
+      </div>
+      <div class="footer__row__3">
+        <div class="dropdown__container">
+          <i class="fas fa-globe"></i>
+          <select
+          name="Linguagem"
+          id="SelecaoLinguagem"
+          class="LinguagemSuspensa"
+          >
+            <option value="Portugues" selected>Português</option>
+            <option value="ingles">Inglês</option>
+          </select>
+        </div>
+      </div>
+      <div class="footer__row__4">
+        <p>Netflix</p>
+      </div>
+    </footer>
+
+    <script src="src/JS/index.js"></script>
+  </body>
+</html>

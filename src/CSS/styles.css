@@ -1,0 +1,522 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: black;
+    color: white;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  .BarraNav {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 3% 5%;
+    z-index: 10;
+  }
+  
+  .BarraNavMarca {
+    width: 100px;
+    height: 100%;
+  }
+  
+  .LogoMarca {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .LinguagemSuspensa {
+    background: transparent;
+    border: none;
+    color: rgb(54, 53, 53);
+  }
+  
+  .LinguagemSuspensa:focus {
+    outline: none;
+  }
+  
+  .dropdown__container {
+    border: 1px solid white;
+    padding: 0.4rem;
+    border-radius: 4px;
+    background: rgba(0, 0, 0, 0.4);
+  }
+  
+  .BotaoEntrar {
+    background-color: #dc030f;
+    border: 1px solid #dc030f;
+    color: white;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+  }
+  
+  .BarraNavItens {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .NetflixImagemContainer {
+    width: 100%;
+    height: 80vh;
+  }
+  
+  .NetflixImagem {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .NetflixOverlay {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 80vh;
+    background: rgba(0, 0, 0, 0.4);
+    background-image: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.8) 0,
+      rgba(0, 0, 0, 0) 60%,
+      rgba(0, 0, 0, 0.8) 100%
+    );
+  }
+  
+  .NetflixCard {
+    position: absolute;
+    top: 20%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .NetflixTitle {
+    font-weight: 600;
+    font-size: 2rem;
+  }
+  
+  .NetflixSubtitle,
+  .NetflixDescription {
+    font-weight: 400;
+    font-size: 1rem;
+  }
+  
+  .NetflixDescription {
+    margin: 0 50px;
+  }
+  
+  .EmailInput {
+    border: none;
+    background: transparent;
+    width: 100%;
+    height: 100%;
+    padding-left: 7px;
+  }
+  .EmailLabel {
+    color: black;
+    position: absolute;
+    top: 28%;
+    left: 2%;
+    color: rgb(153, 149, 149);
+    transition: 0.5s;
+  }
+  
+  .EmailContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .FormContainer {
+    background-color: white;
+    width: 90%;
+    height: 50px;
+    position: relative;
+  }
+  
+  .EmailInput:focus + .EmailLabel {
+    top: 0.2rem;
+    font-size: 10px;
+  }
+  
+  .EmailInput:not(:placeholder-shown).EmailInput:not(:focus) + .EmailLabel {
+    top: 0.2rem;
+    font-size: 10px;
+  }
+  
+  .EmailInput:focus-visible {
+    outline: none;
+  }
+  
+  .BotaoIniciar {
+    background-color: #dc030f;
+    border: 1px solid #dc030f;
+    color: white;
+    padding: 0.8rem 1.2rem;
+    border-radius: 2px;
+    font-size: 15px;
+    letter-spacing: 1px;
+  }
+  
+  .Feature {
+    border-top: 8px solid #222;
+    padding: 2rem 1rem;
+  }
+  
+  .FeatureDetails {
+    text-align: center;
+  }
+  
+  .FeatureTitle {
+    font-size: 25px;
+    font-weight: 600;
+    margin: 10px 0;
+  }
+  
+  .FeatureSubtitle {
+    font-size: 15px;
+    font-weight: 400;
+  }
+  
+  .FeatureImagemContainer {
+    width: 100%;
+    position: relative;
+  }
+  .FeatureImagem {
+    width: 100%;
+  }
+  
+  .FeatureVideoContainer {
+    position: absolute;
+    width: 100%;
+    top: 20%;
+    left: 13%;
+    height: 100%;
+    max-width: 73%;
+    max-height: 54%;
+    z-index: -2;
+  }
+  
+  .FeatureVideo {
+    width: 100%;
+  }
+  
+  .Feature2Container {
+    position: absolute;
+    bottom: 8%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 16em;
+    display: flex;
+    align-items: center;
+    background-color: black;
+    border: 2px solid rgba(255, 255, 255, 0.25);
+    border-radius: 10px;
+    height: 60px;
+    padding: 0.25rem 0.6rem;
+    gap: 15px;
+  }
+  
+  .PosterContainer {
+    width: 20%;
+  }
+  
+  .Poster {
+    width: 100%;
+    height: 100%;
+  }
+  .PosterDetails {
+    width: 60%;
+  }
+  .PosterDetails > h4 {
+    font-size: 13px;
+    font-weight: 500;
+  }
+  .PosterDetails > h6 {
+    font-size: 12px;
+    font-weight: 400;
+    color: rgb(63, 63, 246);
+  }
+  
+  .DownloadGif {
+    width: 20%;
+    height: 100%;
+  }
+  .Gif {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .Feature3VideoContainer {
+    max-width: 63%;
+    max-height: 47%;
+    z-index: -2;
+    top: 9%;
+    left: 19%;
+  }
+  
+  .FAQaccordian {
+    width: 100%;
+  }
+  .FAQtitle {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 20px;
+    font-size: 18px;
+    background-color: #303030;
+    border: 1px solid #303030;
+    color: white;
+  }
+  
+  .FAQvisible {
+    background-color: #303030;
+    border-top: 1px solid black;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out;
+  }
+  
+  .FAQvisible > p {
+    margin: 1rem;
+  }
+  .FAQ__list__container {
+    border-top: 8px solid #222;
+    padding: 2rem 0;
+  }
+  .FAQheading {
+    font-size: 20px;
+    text-align: center;
+    font-weight: 600;
+    margin: 1rem 3rem;
+  }
+  
+  .FAQlist {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .FAQ__get__started__email {
+    text-align: center;
+  }
+  
+  .FAQ__get__started__email > h3 {
+    font-size: 18px;
+    font-weight: 400;
+    margin: 2rem 0;
+  }
+  
+  footer {
+    border-top: 8px solid #333;
+    padding: 2rem 1rem;
+    color: #757575;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .footer__row__2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+  }
+  
+  .footer__row__1 > h4 {
+    font-size: 15px;
+    font-weight: 500;
+  }
+  
+  .footer__row__3 > .dropdown__container {
+    width: fit-content;
+    border: 1px solid #757575;
+    color: #757575;
+  }
+  
+  .footer__row__3 > .dropdown__container > .LinguagemSuspensa {
+    color: #757575;
+  }
+  
+  @media (min-width: 768px) {
+    .NetflixImagemContainer {
+      height: 100vh;
+    }
+  
+    .NetflixOverlay {
+      height: 100vh;
+    }
+    .NetflixCard {
+      top: 40%;
+      left: 30%;
+      transform: translate(-20%, -20%);
+    }
+    .NetflixTitle {
+      font-size: 3rem;
+    }
+    .NetflixSubtitle,
+    .NetflixDescription {
+      font-size: 1.3rem;
+    }
+  
+    .Feature {
+      padding: 4rem;
+    }
+  
+    .FeatureTitle {
+      font-size: 35px;
+    }
+  
+    .FeatureSubtitle {
+      font-size: 20px;
+    }
+    .Feature2Container {
+      max-width: 26em;
+      height: 85px;
+    }
+    .PosterContainer {
+      width: 15%;
+    }
+    .DownloadGif {
+      width: 3rem;
+      height: 3rem;
+    }
+  
+    .PosterDetails > h4 {
+      font-size: 18px;
+    }
+    .PosterDetails > h6 {
+      font-size: 14px;
+    }
+    .FAQtitle {
+      font-size: 20px;
+    }
+    .FAQheading {
+      font-size: 38px;
+      font-weight: 500;
+      letter-spacing: 1px;
+    }
+    .FAQlist {
+      padding: 1rem 5rem;
+    }
+    .FAQ__get__started__email {
+      width: 75%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      transform: translateX(15%);
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .BarraNav {
+      padding: 2% 5%;
+    }
+  
+    .BarraNavMarca {
+      width: 150px;
+    }
+  
+    .BotaoEntrar {
+      padding: 10px 20px;
+      font-size: 18px;
+    }
+    .dropdown__container {
+      padding: 10px 5px;
+    }
+  
+    .BarraNavItens {
+      gap: 30px;
+    }
+  
+    .NetflixCard {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  
+    .FormContainer {
+      width: 50%;
+    }
+    .EmailContainer {
+      flex-direction: row;
+      align-items: center;
+      gap: 1px;
+    }
+    .BotaoIniciar {
+      height: 50px;
+    }
+  
+    .Feature {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+  
+    .FeatureDetails {
+      text-align: left;
+      padding: 0 6rem;
+    }
+  
+    .FeatureTitle {
+      font-size: 50px;
+    }
+  
+    .FeatureSubtitle {
+      font-size: 25px;
+    }
+  
+    .FeatureImagemContainer {
+      max-width: 500px;
+    }
+  
+    .Feature:nth-child(even) {
+      flex-direction: row-reverse;
+    }
+  
+    .Feature2Container {
+      max-width: 20em;
+      height: 100px;
+      padding: 1rem;
+    }
+    .PosterContainer {
+      width: 20%;
+    }
+    .FAQlist {
+      padding: 1rem 25rem;
+    }
+    .FAQ__get__started__email {
+      transform: translateX(16%);
+    }
+    footer {
+      padding: 2rem 20rem;
+      justify-content: flex-start;
+      text-align: left;
+      align-items: flex-start;
+    }
+  
+    .footer__row__2 {
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-wrap: nowrap;
+    }
+  
+    .footer__row__1,
+    .footer__row__3,
+    .footer__row__4 {
+      align-self: flex-start;
+    }
+  }
+  
+  @media (min-width: 1254px) {
+  }
